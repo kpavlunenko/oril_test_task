@@ -13,7 +13,7 @@ public class PriceAPICronService {
         this.priceAPIService = priceAPIService;
     }
 
-    @Scheduled(fixedRate = 1000 * 60 * 3)
+    @Scheduled(fixedRate = 1000 * 30)
     public void syncPriceToAPI() {
         priceAPIService.syncPriceToAPI();
     }
